@@ -11,6 +11,7 @@ git clone https://github.com/seVladimirs/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 chmod +x init.sh
 ./init.sh
+source ~/.bashrc
 ```
 
 Once done, reload your browser.
