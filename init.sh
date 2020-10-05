@@ -123,9 +123,14 @@ install_cf_plugins(){
   cf install-plugin $DOTFILES_ROOT/cf_plugins/ServiceManagement.linux64 -f
 }
 
+chmod_bins(){
+  chmod +x $DOTFILES_ROOT/bin/*
+}
+
 install_dotfiles
 # install_nvm
 install_cf_plugins
+chmod_bins
 
 echo ''
 echo '  All installed!'
