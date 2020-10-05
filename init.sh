@@ -119,10 +119,12 @@ install_nvm(){
 install_cf_plugins(){
   cf install-plugin -r CF-Community "open"
   cf install-plugin -r CF-Community "check-before-deploy"
+  chmod +x $DOTFILES_ROOT/cf_plugins/ServiceManagement.linux64
+  cf install-plugin $DOTFILES_ROOT/cf_plugins/ServiceManagement.linux64 -f
 }
 
 install_dotfiles
-install_nvm
+# install_nvm
 install_cf_plugins
 
 echo ''
