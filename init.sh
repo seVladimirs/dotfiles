@@ -116,8 +116,14 @@ install_nvm(){
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 }
 
+install_cf_plugins(){
+  cf install-plugin -r CF-Community "open"
+  cf install-plugin -r CF-Community "check-before-deploy"
+}
+
 install_dotfiles
 install_nvm
+install_cf_plugins
 
 echo ''
 echo '  All installed!'
