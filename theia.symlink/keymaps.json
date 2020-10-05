@@ -1,0 +1,10 @@
+[
+  {
+    "command": "fileNavigator:toggle",
+    "keybinding": "ctrl+b"
+  },
+  {
+    "command": "-fileNavigator:toggle",
+    "keybinding": "ctrlcmd+shift+e"
+  }
+]

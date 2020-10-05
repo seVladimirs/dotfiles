@@ -1,0 +1,12 @@
+[user]
+	email = vladimirs.spam@gmail.com
+	name = Vladimirs Sem
+[credential "https://github.com"]
+	username = seVladimirs
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+[credential]
+	helper = store
