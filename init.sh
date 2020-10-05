@@ -130,7 +130,7 @@ chmod_bins(){
 install_dotfiles
 # install_nvm
 install_cf_plugins
-chmod_bins
+#chmod_bins
 
 echo ''
 echo '  All installed!'
