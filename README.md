@@ -9,6 +9,7 @@ Symlink the appropriate files in `.dotfiles` to your home directory, by running 
 ```sh
 git clone https://github.com/seVladimirs/dotfiles ~/.dotfiles
 cd ~/.dotfiles
+chmod +x init.sh
 ./init.sh
 ```
 
