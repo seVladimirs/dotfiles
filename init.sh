@@ -124,7 +124,7 @@ install_cf_plugins(){
 }
 
 install_dotfiles
-install_nvm
+# install_nvm
 install_cf_plugins
 
 echo ''
