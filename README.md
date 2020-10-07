@@ -22,3 +22,6 @@ Don't forget to download and install SAP Business Application Studio's fonts whi
 
 - Font Family for Code Editor [Fira Code](https://github.com/tonsky/FiraCode)
 - Font Family for Terminal [MesloLGS NF](https://github.com/romkatv/powerlevel10k#manual-font-installation)
+
+## Known Issues
+- [ ] After BAS is stopped symlinks are gone
