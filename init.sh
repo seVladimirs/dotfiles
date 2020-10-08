@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-#
-# installs things.
 DOTFILES_ROOT=$(pwd -P)
+SECRETS_FOLDER="${DOTFILES_ROOT}/secrets"
 
 set -e
 
@@ -30,7 +29,6 @@ link_file () {
 
   local overwrite= backup= skip=
   local action=
-
   if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
   then
 
@@ -100,37 +98,48 @@ link_file () {
   fi
 }
 
+
 install_dotfiles () {
   info 'installing dotfiles'
 
   local overwrite_all=false backup_all=false skip_all=false
-
-  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+  # Only top level files/directories with ending symlink will be symlinked
+  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 1 -name '*.symlink' -not -path '*.git*')
   do
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
-}
 
-install_nvm(){
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+  # Reload bashrc
+  source ~/.bashrc
 }
 
 install_cf_plugins(){
-  cf install-plugin -r CF-Community "open"
-  cf install-plugin -r CF-Community "check-before-deploy"
-  chmod +x $DOTFILES_ROOT/cf_plugins/ServiceManagement.linux64
-  cf install-plugin $DOTFILES_ROOT/cf_plugins/ServiceManagement.linux64 -f
+  info 'installing cf plugins'
+  cf install-plugin -r CF-Community "open" -f 
+  cf install-plugin -r CF-Community "check-before-deploy" -f
 }
 
-chmod_bins(){
-  chmod +x $DOTFILES_ROOT/bin/*
+install_theia(){
+    info 'installing business application studio configuraitons'
+    local overwrite_all=false backup_all=false skip_all=false
+    # Only top level files in thiea directory
+    for src in $(find -H "$DOTFILES_ROOT/theia" -maxdepth 1 -mindepth 1 -not -path '*.git*')
+    do
+        dst="$HOME/.$(basename "${src%.*}")"
+        link_file "$src" "$dst"
+    done
+}
+
+install_bins(){
+    npm install -g hana-cli
+    chmod +x ${DOTFILES_ROOT}/bin/jcurl
 }
 
 install_dotfiles
-# install_nvm
+install_theia
+install_bins
 install_cf_plugins
-#chmod_bins
 
 echo ''
 echo '  All installed!'
