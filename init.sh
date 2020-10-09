@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 DOTFILES_ROOT=$(pwd -P)
-SECRETS_FOLDER="${DOTFILES_ROOT}/secrets"
 
 set -e
 
@@ -122,13 +121,9 @@ install_cf_plugins(){
 
 install_theia(){
     info 'installing business application studio configuraitons'
-    local overwrite_all=false backup_all=false skip_all=false
-    # Only top level files in thiea directory
-    for src in $(find -H "$DOTFILES_ROOT/theia" -maxdepth 1 -mindepth 1 -not -path '*.git*')
-    do
-        dst="$HOME/.$(basename "${src%.*}")"
-        link_file "$src" "$dst"
-    done
+    # symlink is not working as would we expect therefore we are copying files into theia directory
+    cp "$DOTFILES_ROOT/theia/settings.json" "$HOME/.theia/settings.json"
+    cp "$DOTFILES_ROOT/theia/keymaps.json"  "$HOME/.theia/keymaps.json"
 }
 
 install_bins(){
