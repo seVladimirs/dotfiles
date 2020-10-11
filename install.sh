@@ -63,7 +63,7 @@ install_nvm(){
 
 copy_bin(){
   [[ -d "${HOME}/bin" ]] || mkdir "${HOME}/bin"
-  cp -fr "${DOTFILES_ROOT}/bin" "${HOME}/bin"
+  cp -fr "${DOTFILES_ROOT}/bin" "${HOME}"
   find "${HOME}/bin" -type f -exec chmod +x {} \;
   success "bin folder is copied"
 }

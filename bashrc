@@ -36,11 +36,6 @@ alias gs='git status -s'
 alias gcm='git commit -m $*'
 alias gb='git branch --sort=-committerdate $*'
 
-# Show contents of dir after action
-function cd () {
-    builtin cd "$1"
-    ls -ACF
-}
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
