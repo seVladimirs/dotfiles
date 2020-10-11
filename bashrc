@@ -10,6 +10,7 @@ shopt -s histappend
 alias cp='cp -Rv'
 alias ls='ls --color=auto -ACF'
 alias ll='ls --color=auto -alF'
+alias dev='cd ~/projects'
 alias grep='grep --color=auto'
 alias grepw='grep --color=auto -Hrnwi'
 alias mkdir='mkdir -pv'
@@ -82,15 +83,6 @@ bakpur='\[\e[45m\]'   # Purple
 bakcyn='\[\e[46m\]'   # Cyan
 bakwht='\[\e[47m\]'   # White
 txtrst='\[\e[0m\]'    # Text Reset
-
-# Prompt colours
-atC="${txtpur}"
-nameC="${txtblu}"
-hostC="${txtpur}"
-pathC="${txtcyn}"
-gitC="${txtpur}"
-pointerC="${txtwht}"
-normalC="${txtrst}"
 
 # Red pointer for root
 if [ "${UID}" -eq "0" ]; then
