@@ -111,7 +111,7 @@ info "📦 installing CF plugins"
 install_cf_plugin "open"
 install_cf_plugin "check-before-deploy"
 
-reload_bashrc
+reload_bashrc 
 
 info '🧢🧢🧢 All installed! 🧢🧢🧢'
 info '🧢🧢🧢 With ❤️ from Riga 🧢🧢🧢'
