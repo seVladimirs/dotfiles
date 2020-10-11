@@ -16,12 +16,14 @@ source ~/.bashrc
 
 Once done, reload your browser.
 
+![example screenshot](https://i.imgur.com/szCLyPO.png)
+
 ## SAP Business Application Studio settings
 
 Don't forget to download and install SAP Business Application Studio's fonts which are defined in settings.json:
 
 - Font Family for Code Editor [Fira Code](https://github.com/tonsky/FiraCode)
-- Font Family for Terminal [MesloLGS NF](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 
-## Known Issues
-- [ ] After BAS is stopped symlinks to settings.json is gone
+## Appendix
+
+- Once SAP Business Application Studio is stopped symlinks are gone, therefore we are copying files instead of symlinking them as normally done in dotfiles.
