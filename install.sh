@@ -82,7 +82,7 @@ check_prereq(){
   fi
 
   if ! [ -x "$(command -v node)" ]; then
-    #normally we would install CF, but sudo is not available in business application studio's integrated terminal
+    #normally we would install Node, but sudo is not available in business application studio's integrated terminal
     fail "node is not available, install it and try again"
     exit 1
   fi
