@@ -116,4 +116,4 @@ install_cf_plugin "check-before-deploy"
 reload_bashrc
 
 echo ''
-echo '\n 🔥🔥🔥 All installed! 🧢🧢🧢'
+echo '🔥🔥🔥 All installed! 🧢🧢🧢'
