@@ -110,6 +110,7 @@ copy "${DOTFILES_ROOT}/theia/keymaps.json" "${HOME}/.theia"
 info "📦 installing CF plugins"
 install_cf_plugin "open"
 install_cf_plugin "check-before-deploy"
+install_cf_plugin "html5-plugin"
 
 reload_bashrc 
 
