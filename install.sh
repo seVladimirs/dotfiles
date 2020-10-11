@@ -94,10 +94,10 @@ backup "${HOME}/.gitconfig"
 backup "${HOME}/.theia/settings.json"
 backup "${HOME}/.theia/keymaps.json"
 
-info "📦 creating symlinks"
-symlink "${DOTFILES_ROOT}/bashrc" "${HOME}/.bashrc"
-symlink "${DOTFILES_ROOT}/gitconfig" "${HOME}/.gitconfig"
-symlink "${DOTFILES_ROOT}/git-completion.bash" "${HOME}/.git-completion.bash"
+info "📦 copying symlinks"
+copy "${DOTFILES_ROOT}/bashrc" "${HOME}/.bashrc"
+copy "${DOTFILES_ROOT}/gitconfig" "${HOME}/.gitconfig"
+copy "${DOTFILES_ROOT}/git-completion.bash" "${HOME}/.git-completion.bash"
 
 info "📦 copying bins"
 copy_bin
