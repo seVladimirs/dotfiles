@@ -101,5 +101,6 @@ gitBranch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="${pathC}\w ${gitC}\$(gitBranch) ${pointerC}\$${normalC} "
+export PS1="${txtgrn}➜ ${bldcyn}\W ${bldblu}git:${bldred}\$(gitBranch) ${bldgrn}✗${txtrst} "
+
 export PATH=$HOME/bin:$PATH
