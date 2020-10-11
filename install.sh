@@ -29,7 +29,7 @@ backup(){
 
 symlink(){
     # Force create/replace the symlink.
-    ln -fs $1 "${HOME}/${2}"
+    ln -fs $1 $2
     success "linked $1 to $2"
 }
 
@@ -90,16 +90,14 @@ check_prereq(){
 
 info "📦 creating backup"
 backup "${HOME}/.bashrc"
-backup "${HOME}/.bashrc_aliases"
 backup "${HOME}/.gitconfig"
 backup "${HOME}/.theia/settings.json"
 backup "${HOME}/.theia/keymaps.json"
 
 info "📦 creating symlinks"
-symlink "${DOTFILES_ROOT}/bashrc_aliases"
-symlink "${DOTFILES_ROOT}/bashrc"
-symlink "${DOTFILES_ROOT}/gitconfig"
-symlink "${DOTFILES_ROOT}/git-completion.bash"
+symlink "${DOTFILES_ROOT}/bashrc" "${HOME}/.bashrc"
+symlink "${DOTFILES_ROOT}/gitconfig" "${HOME}/.gitconfig"
+symlink "${DOTFILES_ROOT}/git-completion.bash" "${HOME}/.git-completion.bash"
 
 info "📦 copying bins"
 copy_bin
