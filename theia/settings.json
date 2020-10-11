@@ -29,7 +29,7 @@
   "sapwebide.showWelcomePageOnStartup": false,
   "editor.formatOnSave": true,
   "javascript.implicitProjectConfig.checkJs": true,
-  "terminal.integrated.fontFamily": "'MesloLGS NF','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+  "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "workbench.iconTheme": "theia-file-icons",
