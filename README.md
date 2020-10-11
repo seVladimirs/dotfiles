@@ -7,14 +7,13 @@ I was a little tired of spending time to peronilize [SAP Business Application St
 Symlink the appropriate files in `.dotfiles` to your home directory, by running this:
 
 ```sh
-git clone https://github.com/seVladimirs/dotfiles ~/.dotfiles
-cd ~/.dotfiles
+git clone https://github.com/seVladimirs/dotfiles
+cd dotfiles
 chmod +x init.sh
 ./init.sh
-source ~/.bashrc
 ```
 
-Once done, reload your browser.
+Once done, reload your browser and terminal.
 
 ![example screenshot](https://i.imgur.com/szCLyPO.png)
 
