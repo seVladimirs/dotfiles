@@ -1,43 +1,39 @@
 {
-    "sqltools.languageServerEnv": {
-        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.node_modules_global/bin"
-    },
-    "java.jdt.ls.vmargs": "-DwatchParentProcess=false -noverify -Xmx512m -XX:+UseG1GC -XX:+UseStringDeduplication",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.autobuild.enabled": false,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "ports.excludeExposeNotification": {
-        "ports": [
-            8000,
-            8005,
-            8009
-        ],
-        "ranges": [
-            {
-                "from": 0,
-                "to": 0
-            }
-        ]
-    },
-    "spring-boot.ls.checkJVM": false,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "sqltools.useNodeRuntime": true,
-    "editor.fontSize": 10,
-    "editor.minimap.enabled": false,
-    "sapwebide.showWelcomePageOnStartup": false,
-    "editor.formatOnSave": true,
-    "javascript.implicitProjectConfig.checkJs": true,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "terminal.integrated.fontSize": 10,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true,
-    "workbench.iconTheme": "theia-file-icons",
-    "workbench.colorTheme": "Quiet Light",
+  "sqltools.languageServerEnv": {
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.node_modules_global/bin"
+  },
+  "java.jdt.ls.vmargs": "-DwatchParentProcess=false -noverify -Xmx512m -XX:+UseG1GC -XX:+UseStringDeduplication",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.autobuild.enabled": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "ports.excludeExposeNotification": {
+    "ports": [8000, 8005, 8009],
+    "ranges": [
+      {
+        "from": 0,
+        "to": 0
+      }
+    ]
+  },
+  "spring-boot.ls.checkJVM": false,
+  "editor.fontFamily": "'Fira Code','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "sqltools.useNodeRuntime": true,
+  "editor.fontSize": 10,
+  "editor.minimap.enabled": false,
+  "sapwebide.showWelcomePageOnStartup": false,
+  "editor.formatOnSave": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "workbench.iconTheme": "theia-file-icons",
+  "workbench.colorTheme": "'Quiet Light','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'"
 }
