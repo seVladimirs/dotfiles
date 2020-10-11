@@ -114,4 +114,4 @@ install_cf_plugin "check-before-deploy"
 reload_bashrc
 
 info '🧢🧢🧢 All installed! 🧢🧢🧢'
-info '🧢🧢🧢 With 💙 from 🇱🇻 🧢🧢🧢'
+info '🧢🧢🧢 With ❤️ from Riga 🧢🧢🧢'
