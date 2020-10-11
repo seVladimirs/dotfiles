@@ -30,10 +30,9 @@
   "sapwebide.showWelcomePageOnStartup": false,
   "editor.formatOnSave": true,
   "javascript.implicitProjectConfig.checkJs": true,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontFamily": "'MesloLGS NF,'Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "workbench.iconTheme": "theia-file-icons",
-  "workbench.colorTheme": "'Quiet Light','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'"
+  "workbench.colorTheme": "Quiet Light"
 }
