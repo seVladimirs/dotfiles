@@ -40,12 +40,12 @@ copy(){
 }
 
 install_cf_plugin(){
-  cf install-plugin -r CF-Community -f "$1"
+  cf install-plugin -r CF-Community -f "$1" > /dev/null
   success "installed CF plugin $1"
 }
 
 install_npms(){
-  npm install -g $1
+  npm install -g $1 > /dev/null
   success "installed $1 globally"
 }
 
