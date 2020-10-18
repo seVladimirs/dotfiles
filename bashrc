@@ -93,7 +93,7 @@ export PS1="${txtgrn}➜ ${bldcyn}\W ${bldred}\$(gitBranch) ${bldgrn}✗${txtrst
 export PATH=$HOME/bin:$PATH
 
 # workaround - when workspace is restarted reinstall cf plugins
-command cf smsi >/dev/null 2>&1 || { echo >&2 "reinstalling smsi plugin."; cf install-plugin -r CF-Community "service-management" -f > /dev/null; }
-command cf default-env >/dev/null 2>&1 || { echo >&2 "reinstalling default-env plugin."; cf install-plugin https://github.com/saphanaacademy/DefaultEnv/releases/download/v1.0.0/DefaultEnv.linux32 -f > /dev/null; }
-command cf open >/dev/null 2>&1 || { echo >&2 "reinstalling open plugin."; cf install-plugin -r CF-Community "open" -f > /dev/null; }
-command cf check-before-deploy >/dev/null 2>&1 || { echo >&2 "reinstalling check-before-deploy plugin."; cf install-plugin -r CF-Community "check-before-deploy" -f > /dev/null; }
+#command cf smsi >/dev/null 2>&1 || { echo >&2 "reinstalling smsi plugin."; cf install-plugin -r CF-Community "service-management" -f > /dev/null; }
+#command cf default-env >/dev/null 2>&1 || { echo >&2 "reinstalling default-env plugin."; cf install-plugin https://github.com/saphanaacademy/DefaultEnv/releases/download/v1.0.0/DefaultEnv.linux32 -f > /dev/null; }
+#command cf open >/dev/null 2>&1 || { echo >&2 "reinstalling open plugin."; cf install-plugin -r CF-Community "open" -f > /dev/null; }
+#command cf check-before-deploy >/dev/null 2>&1 || { echo >&2 "reinstalling check-before-deploy plugin."; cf install-plugin -r CF-Community "check-before-deploy" -f > /dev/null; }
