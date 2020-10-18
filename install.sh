@@ -94,7 +94,7 @@ backup "${HOME}/.gitconfig"
 backup "${HOME}/.theia/settings.json"
 backup "${HOME}/.theia/keymaps.json"
 
-info "📦 copying symlinks"
+info "📦 copying dot files"
 copy "${DOTFILES_ROOT}/bashrc" "${HOME}/.bashrc"
 copy "${DOTFILES_ROOT}/gitconfig" "${HOME}/.gitconfig"
 copy "${DOTFILES_ROOT}/git-completion.bash" "${HOME}/.git-completion.bash"
@@ -111,8 +111,10 @@ info "📦 installing CF plugins"
 install_cf_plugin "open"
 install_cf_plugin "check-before-deploy"
 install_cf_plugin "html5-plugin"
-
-reload_bashrc 
+install_cf_plugin "service-management"
+# install cf plugin not from CF repo
+cf install-plugin https://github.com/saphanaacademy/DefaultEnv/releases/download/v1.0.0/DefaultEnv.linux32 -f > /dev/null
+success "installed CF plugin DefaultEnv"
 
 echo ''
 info '🧢🧢🧢 All installed! 🧢🧢🧢'

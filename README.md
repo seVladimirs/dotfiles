@@ -23,6 +23,5 @@ Don't forget to download and install SAP Business Application Studio's fonts whi
 
 - Font Family for Code Editor [Fira Code](https://github.com/tonsky/FiraCode)
 
-## Appendix
-
-- Once SAP Business Application Studio is stopped symlinks are gone, therefore we are copying files instead of symlinking them as normally done in dotfiles.
+## Issues
+- Once workspace is restarted theia settings are gone, as a workaround is too execute install.sh
