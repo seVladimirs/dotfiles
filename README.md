@@ -4,7 +4,7 @@ I was a little tired of spending time to peronilize [SAP Business Application St
 
 ## install
 
-Symlink the appropriate files in `.dotfiles` to your home directory, by running this:
+Copy or symlink the appropriate files in `.dotfiles` to your home directory, by running this:
 
 ```sh
 git clone https://github.com/seVladimirs/dotfiles
