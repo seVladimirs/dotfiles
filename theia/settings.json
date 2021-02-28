@@ -42,9 +42,15 @@
   "editor.cursorBlinking": "expand",
   "yaml.format.printWidth": 80,
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.formatOnPaste": true,
   "welcome.showOnStartup": false,
   "javascript.implicitProjectConfig.checkJs": true,
   "terminal.integrated.fontFamily": "'Fira Code','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "formattingToggle.affects": ["formatOnSave"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
