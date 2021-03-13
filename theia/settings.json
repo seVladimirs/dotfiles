@@ -1,4 +1,10 @@
 {
+  "sqltools.useNodeRuntime": true,
+  "sqltools.languageServerEnv": {
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.node_modules_global/bin"
+  },
+  "cds.checkDevKitInstalled": false,
+  "cds.releaseNotes.showAutomatically": false,
   "java.jdt.ls.vmargs": "-DwatchParentProcess=false -noverify -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98632K -Xss1M -Xmx437943K -XX:+UseG1GC -XX:+UseStringDeduplication",
   "java.configuration.checkProjectSettingsExclusions": false,
   "java.configuration.updateBuildConfiguration": "automatic",
@@ -11,12 +17,7 @@
   },
   "ports.excludeExposeNotification": {
     "ports": [8000, 8005, 8009],
-    "ranges": [
-      {
-        "from": 0,
-        "to": 0
-      }
-    ]
+    "ranges": [{ "from": 0, "to": 0 }]
   },
   "spring-boot.ls.checkJVM": false,
   "spring-boot.ls.java.vmargs": [
@@ -25,10 +26,6 @@
     "-Xss1M",
     "-Xmx437943K"
   ],
-  "sqltools.useNodeRuntime": true,
-  "sqltools.languageServerEnv": {
-    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.node_modules_global/bin"
-  },
   "editor.formatOnSave": true,
   "editor.autoSaveDelay": 30000,
   "workbench.colorTheme": "Atom One Light",
@@ -42,7 +39,7 @@
   "editor.cursorBlinking": "expand",
   "yaml.format.printWidth": 80,
   "editor.cursorSmoothCaretAnimation": true,
-  "welcome.showOnStartup": false,
+  "welcome.showOnStartup": true,
   "javascript.implicitProjectConfig.checkJs": true,
   "terminal.integrated.fontFamily": "'Fira Code','Source Sans Pro', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.integrated.cursorBlinking": true,
@@ -50,7 +47,10 @@
   "editor.formatOnType": true,
   "formattingToggle.affects": ["formatOnSave"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "terminal.integrated.cursorStyle": "line",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.renderIndentGuides": true,
+  "typescript.preferences.quoteStyle": "auto",
+  "yaml.format.singleQuote": true
 }
